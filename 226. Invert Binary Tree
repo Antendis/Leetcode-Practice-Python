@@ -4,7 +4,13 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
 class Solution(object):
     def invertTree(self, root):
-        print(root.left.right.val)
+        
+        if root == None:
+            return
+        else:
+            invert = self.invertTree
+            root.left = invert(root.right)
+            root.right = invert(root.left)
+            return root
