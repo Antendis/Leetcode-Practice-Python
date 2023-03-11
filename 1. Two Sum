@@ -4,7 +4,8 @@ class Solution(object):
         numsLength = len(nums)
 
         for i, num1 in enumerate(nums):
-            for num2 in nums[i+1:]:
-        
-                if target is num1 + num2:
-                    return [num1, num2]
+            for j in range(i+1, numsLength):
+                num2 = nums[j]
+                
+                if target == num1 + num2:
+                    return [i, j]
