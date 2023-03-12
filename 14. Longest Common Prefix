@@ -3,8 +3,10 @@ class Solution(object):
         answer = ""
         i = 0
         n = 0
+        shortestLen = min(len(s) for s in strs)
 
-        while n != 99:
+
+        while n != 99 and i < shortestLen:
             temp = []
             for x in strs:
                 temp.append(x[i])
