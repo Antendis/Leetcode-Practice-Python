@@ -3,8 +3,11 @@ class Solution(object):
         if x < 0:
             return False
         
+        original = x
+        new = 0
         while x > 0:
             remainder = x % 10
-            newX = newX * 10 + remainder
+            new = new * 10 + remainder
+            x = x // 10
         
-        return newX
+        return original == new
