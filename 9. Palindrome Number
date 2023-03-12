@@ -1,0 +1,10 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        if x < 0:
+            return False
+        
+        while x > 0:
+            remainder = x % 10
+            newX = newX * 10 + remainder
+        
+        return newX
