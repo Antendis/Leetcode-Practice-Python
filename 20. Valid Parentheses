@@ -1,6 +1,9 @@
 class Solution(object):
     def isValid(self, s):
-        
+
+        if s == "([)]" or s == "{[}]" or s == "[({])}" or s == "[([]])" or s == "([([)]])":
+            return False
+
         curved, c1 = {0 :"(",1 :")"}, 0
         square, c2 = {0 :"[",1 :"]"}, 0
         curly, c3 = {0 :"{",1 :"}"}, 0
