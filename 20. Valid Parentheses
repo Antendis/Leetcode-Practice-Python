@@ -1,0 +1,12 @@
+class Solution(object):
+    def isValid(self, s):
+        
+        openP = {"(": 0, "{": 1, "[": 2}
+        closeP = {")": 0, "}": 1, "]": 2}
+        i = 0
+
+        while i < len(s):
+            if openP[s[i]] != closeP[s[i+1]]:
+                return False
+            i += 2
+        return True
