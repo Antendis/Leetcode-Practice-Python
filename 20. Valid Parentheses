@@ -6,7 +6,7 @@ class Solution(object):
         i = 0
 
         while i < len(s):
-            if openP[s[i]] != closeP[s[i+1]]:
+            if openP.get(s[i]) != closeP.get(s[i+1]):
                 return False
             i += 2
         return True
