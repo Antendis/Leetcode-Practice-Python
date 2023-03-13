@@ -9,4 +9,5 @@ class Solution(object):
             if openP.get(s[i]) != closeP.get(s[i+1]):
                 return False
             i += 2
+            
         return True
