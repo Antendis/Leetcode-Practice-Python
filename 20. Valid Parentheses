@@ -27,4 +27,7 @@ class Solution(object):
 
             i += 1
 
-        return True
+        if c1 + c2 + c3 != 0:
+            return False
+        else:
+            return True
