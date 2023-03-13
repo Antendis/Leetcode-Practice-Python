@@ -1,9 +1,9 @@
 class Solution(object):
     def isValid(self, s):
         
-        curved, c1 = {"(": 0, ")": 1}, 0
-        square, c2 = {"[": 0, "]": 1}, 0
-        curly, c3 = {"{": 0, "}": 1}, 0
+        curved, c1 = {0 :"(",1 :")"}, 0
+        square, c2 = {0 :"[",1 :"]"}, 0
+        curly, c3 = {0 :"{",1 :"}"}, 0
         i = 0
 
         while i < len(s):
@@ -17,13 +17,13 @@ class Solution(object):
 
             if s[i] == curved[1]:
                 c1 -= 1
-                if c1 < 0: return false
+                if c1 < 0: return False
             if s[i] == square[1]:
                 c2 -= 1
-                if c2 < 0: return false
+                if c2 < 0: return False
             if s[i] == curly[1]:
                 c3 -= 1
-                if c3 < 0: return false
+                if c3 < 0: return False
 
             i += 1
 
