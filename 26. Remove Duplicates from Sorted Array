@@ -14,4 +14,4 @@ class Solution(object):
             j = 0
             i += 1
 
-        return k, nums
+        return k
