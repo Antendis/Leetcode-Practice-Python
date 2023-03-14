@@ -1,11 +1,17 @@
 class Solution(object):
     def removeDuplicates(self, nums):
-        i = 0
-        k = len(set(nums))
-        while i < k:
-            
-            
-            
-            
-            
+        i, j = 0, 0
+        k = len(set(nums)) #gets length of what the array should be
+        lenDif = len(nums) - k
+
+        while i < lenDif:
+
+            while j < k:
+                if nums[j] == nums[j-1]: # if the element is the same as the one before it, copy the one after
+                    nums[j] = nums[j+1]
+                j += 1
+
+            j = 0
             i += 1
+
+        return k, nums
