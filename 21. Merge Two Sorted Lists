@@ -10,7 +10,7 @@ class Solution(object):
         merged = ListNode()
         current = merged
 
-        while list1 is not None and list2 is not None:
+        while list1 and list2:
             if list1.val < list2.val:
                 current.next = list1
                 list1 = list1.next
