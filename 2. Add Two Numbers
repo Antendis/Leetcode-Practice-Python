@@ -1,0 +1,20 @@
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+
+        LinkedOut = ListNode()
+        list1, list2 = [], []
+
+        while l1 and l2:
+            if l1 != None:
+                list1.insert(0, l1.val)
+                l1 = l1.next
+            if l2 != None:
+                list2.insert(0, l2.val)
+                l2 = l2.next
+            
+        print(list1, list2)
