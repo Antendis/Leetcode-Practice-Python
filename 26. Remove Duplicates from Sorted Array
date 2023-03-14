@@ -1,19 +1,11 @@
 class Solution(object):
     def removeDuplicates(self, nums):
-
-        originalLength = len(nums)
-        test = set(nums)
-        numList = list(test)
-        k = len(numList)
-        j = k
         i = 0
-        lenDiff = originalLength - k
-
-        while i < lenDiff:
+        k = len(set(nums))
+        while i < k:
+            
+            
+            
+            
+            
             i += 1
-            if numList[i]:
-                nums[i] = numList[i]
-
-
-        print(k, nums, lenDiff)
-        return  k, nums
