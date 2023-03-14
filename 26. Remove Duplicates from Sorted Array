@@ -1,0 +1,9 @@
+class Solution(object):
+    def removeDuplicates(self, nums):
+
+
+        nums = set(nums)
+        
+        k = len(nums)
+
+        return k, int(nums)
