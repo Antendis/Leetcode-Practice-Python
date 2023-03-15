@@ -31,4 +31,4 @@ class Solution(object):
             linkedOut.next = numberOut[i+1]
             i += 1
 
-        return ListNode(linkedOut)
+        return linkedOut
