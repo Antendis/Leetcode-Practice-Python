@@ -3,6 +3,6 @@ class Solution(object):
         i = 0
         for x in nums:
             if x != val:
-                num[i] = x
+                nums[i] = x
                 i += 1
         return i
