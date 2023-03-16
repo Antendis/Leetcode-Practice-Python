@@ -5,8 +5,7 @@ class Solution(object):
         takeAway = 0
         for i in range(0, len(timeSeries)-1):
             t = timeSeries[i]
-            endTime = duration + t - 1
-
+            endTime = duration + t
             if endTime > timeSeries[i+1]:
                 takeAway += endTime - timeSeries[i+1]
 
