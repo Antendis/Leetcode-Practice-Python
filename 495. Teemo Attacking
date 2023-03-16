@@ -1,12 +1,11 @@
 class Solution(object):
     def findPoisonedDuration(self, timeSeries, duration):
-        k = 0
-        i = 0
-        takeAway = 0
-        for i in range(0, len(timeSeries)-1):
+        k, i, takeAway = 0, 0, 0
+        
+        for i in range(0, len(timeSeries)-1): #loop to find overlaps and remove overlapped time
             t = timeSeries[i]
             endTime = duration + t
-            if endTime > timeSeries[i+1]:
+            if endTime > timeSeries[i+1]: 
                 takeAway += endTime - timeSeries[i+1]
 
         k = duration * len(timeSeries) - takeAway
