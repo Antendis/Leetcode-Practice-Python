@@ -2,11 +2,13 @@ class Solution(object):
     def findPoisonedDuration(self, timeSeries, duration):
         k = 0
         i = 0
-        while i < len(timeSeries):
+        takeAway = 0
+        for i in range(0, len(timeSeries)-1):
             t = timeSeries[i]
             endTime = duration + t - 1
+
             if endTime > timeSeries[i+1]:
-                takeAway = endTime - timeseries[i+1]
-            k += duration
-            i += 1
-        return (k - takeAway)
+                takeAway += endTime - timeSeries[i+1]
+
+        k = duration * len(timeSeries) - takeAway
+        return k
