@@ -1,4 +1,4 @@
- class Solution(object):
+class Solution(object):
     def removeElement(self, nums, val):
 
         valCount = 0
@@ -8,6 +8,17 @@
                 nums[i] = "x"
                 valCount += 1
         
+        print(nums)
+        i = 0
+        while i < len(nums):
+            if nums[i] == "x":
+                j = i
+                while j < len(nums) - 1:
+                    nums[j] = nums[j+1]
+                    j += 1
+                    print(nums)
+            i += 1
+
         print(nums)
 
         return len(nums) - valCount
