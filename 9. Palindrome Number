@@ -10,4 +10,4 @@ class Solution(object):
             new = new * 10 + remainder
             x = x // 10
         
-        return original == new
+        return original == new #checks true/False
