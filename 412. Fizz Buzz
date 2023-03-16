@@ -7,8 +7,8 @@ class Solution(object):
         #loop until counted
         while count < n:
             count += 1
-            #if the remainder is 0, it is divisible and acts accordingly
-            if (count%3 == 0 and count%5 != 0):
+            
+            if (count%3 == 0 and count%5 != 0):  #if the remainder is 0, it is divisible and acts accordingly
                 answers.append("Fizz")
             elif (count%5 == 0 and count%3 != 0):
                 answers.append("Buzz")
