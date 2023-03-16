@@ -20,5 +20,5 @@ class Solution(object):
             i += 1
 
         print(nums)
-
-        return len(nums) - valCount
+        k = 1
+        return k * (int(len(nums)) - valCount)
