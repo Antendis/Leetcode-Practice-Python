@@ -3,7 +3,7 @@ class Solution(object):
         
         index = -1
         if needle in haystack:
-            index = haystack.index(needle)
+            index = haystack.index(needle) #index
             return index
         else:
             return index
