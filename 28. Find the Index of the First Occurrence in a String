@@ -1,14 +1,9 @@
 class Solution(object):
     def strStr(self, haystack, needle):
-
-        checker = ""
-        i, j = 0, 0
-        for wheat in haystack:
-            if i < len(needle) and wheat == needle[i]:
-                checker = checker + needle[i]
-            
-
-                i += 1
-
-
-        print(checker, i)
+        
+        index = -1
+        if needle in haystack:
+            index = haystack.index(needle)
+            return index
+        else:
+            return index
