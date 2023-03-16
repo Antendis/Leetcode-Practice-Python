@@ -1,24 +1,8 @@
 class Solution(object):
     def removeElement(self, nums, val):
-
-        valCount = 0
-
-        for i in range(len(nums)):
-            if nums[i] == val:
-                nums[i] = "x"
-                valCount += 1
-        
-        print(nums)
         i = 0
-        while i < len(nums):
-            if nums[i] == "x":
-                j = i
-                while j < len(nums) - 1:
-                    nums[j] = nums[j+1]
-                    j += 1
-                    print(nums)
-            i += 1
-
-        print(nums)
-        k = 1
-        return k * (int(len(nums)) - valCount)
+        for x in nums:
+            if x != val:
+                num[i] = x
+                i += 1
+        return i
