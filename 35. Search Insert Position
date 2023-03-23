@@ -1,1 +1,19 @@
-#insert binary search
+class Solution(object):
+    def searchInsert(self, nums, target):
+        first, last = nums[0], nums[len(nums)-1] #first n last of nums
+        middle = (first + last) // 2 #            middle of nums
+        print(middle)
+
+        while first != last:
+
+            if middle < target:
+                first = middle + 1
+                middle = (first + last) // 2
+
+            if middle > target:
+                last = middle - 1
+                middle = (first + last) // 2
+
+
+            if middle == target:
+                return nums.index(middle)
