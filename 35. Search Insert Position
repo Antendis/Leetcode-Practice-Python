@@ -4,16 +4,24 @@ class Solution(object):
         middle = (first + last) // 2 #            middle of nums
         print(middle)
 
-        while first != last:
+        while first < last and target != middle:
 
             if middle < target:
                 first = middle + 1
                 middle = (first + last) // 2
+                print(first, middle, last)
 
             if middle > target:
                 last = middle - 1
                 middle = (first + last) // 2
+                print(first, middle, last)
 
 
             if middle == target:
-                return nums.index(middle)
+                print(first, middle, last)
+                return int(nums.index(middle))
+                break
+                
+
+
+        
