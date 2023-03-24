@@ -1,24 +1,18 @@
 class Solution(object):
     def searchInsert(self, nums, target):
-        first, last = nums[0], len(nums)-1 #first n last of nums
+        first, last = 0, len(nums)-1 
 
         while first <= last:
 
-            middle = (first + last) / 2 #            middle of nums.
+            middle = (first + last) // 2 
 
             if nums[middle] == target:
-                print(first, middle, last)
                 return middle
 
             if nums[middle] < target:
                 first = middle + 1
-                print(first, middle, last)
 
             else:
                 last = middle - 1
-                print(first, middle, last)
-        return first
-                
 
-
-        
+        return first 
