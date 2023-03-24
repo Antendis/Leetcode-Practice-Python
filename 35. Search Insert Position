@@ -1,5 +1,6 @@
 class Solution(object):
     def searchInsert(self, nums, target):
+    
         first, last = 0, len(nums)-1 
 
         while first <= last:
@@ -15,4 +16,4 @@ class Solution(object):
             else:
                 last = middle - 1
 
-        return first 
+        return first  
