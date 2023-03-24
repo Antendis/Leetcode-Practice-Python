@@ -4,7 +4,7 @@ class Solution(object):
 
         while first <= last:
 
-            middle = (first + last) / 2 #            middle of nums
+            middle = (first + last) / 2 #            middle of nums.
 
             if nums[middle] == target:
                 print(first, middle, last)
