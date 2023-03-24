@@ -15,12 +15,12 @@ class Solution(object):
         def countNodes(self):
             temp = self.head
             i = 0
+            
             while (temp != None):
                 i += 1
                 temp = temp.next
+                
             return i   
 
         nodeNum = countNodes(head)
         print(nodeNum)
-        
-        
