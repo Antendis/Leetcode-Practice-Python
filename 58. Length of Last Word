@@ -1,12 +1,4 @@
 class Solution(object):
     def lengthOfLastWord(self, s):
         
-        backwards = s[::-1]
-        
-        for el in backwards:
-            while el == " ":
-                el = ""
-        
-        print(backwards)
-
-        return 1
+        return len(s.split()[-1])
