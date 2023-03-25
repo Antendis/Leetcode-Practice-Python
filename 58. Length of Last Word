@@ -1,6 +1,6 @@
 class Solution(object):
     def lengthOfLastWord(self, s):
         
-        for el in s[::-1]:
-            if el == " ":
-                return s.index(el)
+        backwards = s[::-1]
+
+        print(backwards)
