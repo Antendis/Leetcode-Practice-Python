@@ -8,15 +8,10 @@ class Solution(object):
         print(backwards)
 
 
-        while i < counter:
+        for el in backwards:
 
-            if backwards[i] != " ":
-                length += 1
+            while el != " ":
+                counter += 1
+                continue
 
-                if backwards[i + 1] == " ":
-
-                    return length
-
-            i += 1
-
-        return length
+        return counter
