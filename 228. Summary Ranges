@@ -1,4 +1,18 @@
 class Solution(object):
     def summaryRanges(self, nums):
         
-        print(nums)
+        i, v1, v2 = 1, 0, 0
+        array = []
+
+        while i < len(nums):
+            print array     
+            
+            if nums[i-1] == nums[i] - 1:
+                v2 = i
+            else:
+                array.append(v1)
+
+            i += 1
+
+            if i < len(nums):
+                v1 = nums[i]
