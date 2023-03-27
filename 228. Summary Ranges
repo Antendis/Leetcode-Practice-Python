@@ -7,7 +7,7 @@ class Solution(object):
         while i < len(nums):
             print array     
             
-            if nums[i-1] == nums[i] - 1:
+            if nums[i - 1] == nums[i] - 1:
                 v2 = i
             else:
                 array.append(v1)
