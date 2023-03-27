@@ -1,0 +1,9 @@
+class Solution(object):
+    def buildArray(self, nums):
+        i = 0
+        ans = []
+        while i < len(nums):
+            ans.append(nums[nums[i]])
+            i += 1 
+
+        return ans
