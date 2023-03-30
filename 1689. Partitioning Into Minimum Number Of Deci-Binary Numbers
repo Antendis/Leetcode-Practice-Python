@@ -1,0 +1,9 @@
+class Solution(object):
+    def minPartitions(self, n):
+        x = 0
+
+        for i in n:
+            if i > x:
+                x = i
+
+        print(x)
