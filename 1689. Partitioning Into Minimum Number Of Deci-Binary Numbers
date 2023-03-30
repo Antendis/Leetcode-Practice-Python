@@ -6,4 +6,4 @@ class Solution(object):
             if i > x:
                 x = i
 
-        print(x)
+        return int(x)
