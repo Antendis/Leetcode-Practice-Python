@@ -4,6 +4,7 @@ class Solution(object):
         linkedOut = ListNode()
         list1, list2 = [], []
         number1, number2 = "", ""
+        i = 0
 
         while l1 and l2:
             if l1 != None:
@@ -18,8 +19,7 @@ class Solution(object):
         numberOut = int(number1[::-1]) + int(number2[::-1])
         numberOut = str(numberOut)
         numberOut = numberOut[::-1]
-        
-        i = 0
+
         linkedOut.val = numberOut[0]
         while i+1 < len(str(numberOut)):
             linkedOut.next = numberOut[i+1]
