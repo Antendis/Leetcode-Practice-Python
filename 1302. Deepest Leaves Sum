@@ -10,3 +10,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+
+        head = root
+        head = head.left
+        print(head.val)
