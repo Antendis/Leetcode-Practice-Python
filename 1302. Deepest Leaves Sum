@@ -11,6 +11,9 @@ class Solution(object):
         :rtype: int
         """
 
+
         head = root
         head = head.left
         print(head.val)
+        
+        #how do you go back up a tree when going downwards recursively
