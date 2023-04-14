@@ -4,3 +4,14 @@ class Solution(object):
         :type accounts: List[List[int]]
         :rtype: int
         """
+        y=0
+        for accList in accounts:
+            x = 0
+
+            for acc in accList:
+                x += acc
+
+            if x > y:
+                y = x
+                
+        return y
