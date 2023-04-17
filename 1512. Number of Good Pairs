@@ -7,13 +7,11 @@ class Solution(object):
         count = 0
 
         for i, firstNum in enumerate(nums):
-
             for secondNum in nums[i+1:]:
-                
+
                 print firstNum, secondNum
-                if firstNum == secondNum and nums.index(firstNum) < nums.index(secondNum):
-                    print "yes"
+                if firstNum == secondNum:
                     count += 1
+                    print "yes"
 
         return count
-
