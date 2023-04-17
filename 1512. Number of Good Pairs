@@ -10,9 +10,9 @@ class Solution(object):
 
             for secondNum in nums[firstNum:]:
 
-                if firstNum == secondNum:
+                if firstNum == secondNum and index(firstNum) <= index(secondNum):
 
                     count += 1
 
-        return count/2
+        return count
 
