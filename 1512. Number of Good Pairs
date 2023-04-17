@@ -6,12 +6,13 @@ class Solution(object):
         """
         count = 0
 
-        for firstNum in nums:
+        for i, firstNum in enumerate(nums):
 
-            for secondNum in nums[firstNum:]:
-
-                if firstNum == secondNum and index(firstNum) <= index(secondNum):
-
+            for secondNum in nums[i+1:]:
+                
+                print firstNum, secondNum
+                if firstNum == secondNum and nums.index(firstNum) < nums.index(secondNum):
+                    print "yes"
                     count += 1
 
         return count
