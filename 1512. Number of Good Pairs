@@ -4,3 +4,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        count = 0
+
+        for firstNum in nums:
+
+            for secondNum in nums[firstNum:]:
+
+                if firstNum == secondNum:
+
+                    count += 1
+
+        return count
