@@ -12,7 +12,7 @@ class Solution(object):
         shuffled = []
         #make a new array by taking turns adding one of each
         i = 0
-        while i < (n/2):
+        while i < (n):
 
             shuffled.append(a[i])
             shuffled.append(b[i])
