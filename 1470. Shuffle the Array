@@ -9,5 +9,14 @@ class Solution(object):
         #split in half to two arrays
         a = nums[:n]
         b = nums[n:]
+        shuffled = []
         #make a new array by taking turns adding one of each
-        print a, b
+        i = 0
+        while i < (2*n):
+
+            shuffled.append(a[i])
+            shuffled.append(b[i])
+
+            i+=1
+
+        return shuffled
