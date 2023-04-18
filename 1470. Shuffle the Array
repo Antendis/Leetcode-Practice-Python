@@ -1,0 +1,10 @@
+class Solution(object):
+    def shuffle(self, nums, n):
+        """
+        :type nums: List[int]
+        :type n: int
+        :rtype: List[int]
+        """
+
+        #split in half to two arrays
+        #make a new array by taking turns adding one of each
