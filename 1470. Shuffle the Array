@@ -7,4 +7,7 @@ class Solution(object):
         """
 
         #split in half to two arrays
+        a = nums[:n]
+        b = nums[n:]
         #make a new array by taking turns adding one of each
+        print a, b
